@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Practique resolviendo problemas del dia a dia </h1>
+ <h2>PROGRAMA</h2>
+ <h3>Calcular IMC</h3>
+ <script>
+    function saltoDeLinea(){
+        document.write('<br>');
+        document.write('<hr>')
+    }
+    function imprimir(frase){
+        document.write(frase);
+        saltoDeLinea();
+    }
+var peso= prompt('ingrese su peso:','');
+var altura=prompt('ingrese su altura:','');
+var imc =(peso / (altura * altura)).toFixed(2)
+//imprimir('mi indice de masa corporal es: ' + imc);
+ </script>
+<big><script>imprimir('mi indice de masa corporal es: ' + imc);</script></big>
+<hr><br>
+<h3>Calcular IMC 02</h3>
+<script>
+   function saltoDeLinea(){
+       document.write('<br>');
+       document.write('<hr>')
+   }
+   function calculoImc(pesos,alturas){
+        imc = (pesos / (alturas * alturas)).toFixed(2);
+        imprimir('escrito dentro de la funcion, el IMC' + imc );
+        return(imc);
+        
+   }
+var pesos= prompt('ingrese su peso:','');
+var alturas=prompt('ingrese su altura:','');
+var imc = calculoImc(pesos,alturas);
+//imprimir('mi indice de masa corporal es: ' + imc);
+</script>
+<big><script>imprimir('mi indice de masa corporal es: ' + imc);</script></big>
+
+<h3>Calcular IMC 03</h3>
+<script>
+   function saltoDeLinea(){
+       document.write('<br>');
+       document.write('<hr>')
+   }
+   function calculoImc(nombre,nPeso,nAltura){
+        imc = (nPeso / (nAltura * nAltura)).toFixed(2);
+        imprimir('el IMC de ' + nombre +' es '+ imc );
+        }
+
+var nombre=prompt('ingrese su Nombre:','');
+var nPeso= prompt('ingrese su peso:','');
+var nAltura=prompt('ingrese su altura:','');
+calculoImc(nombre,nPeso,nAltura);
+
+</script>
+
+</body>
+</html>
